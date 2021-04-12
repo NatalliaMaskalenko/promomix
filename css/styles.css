@@ -1,4 +1,22 @@
 /* Общие стили */
+:root {
+  --mein-font: "TT Norms", sans-serif;
+  --color-accent: #e52322;
+  --color-lightgray: #b0b6bf;
+  --color-mein: #1f2c37;
+  --color-wiht: #ffffff;
+}
+
+body {
+  font-family: var(--mein-font);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-mein);
+  line-height: 1;
+  background: #ffffff;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -13,6 +31,7 @@
 a {
   display: block;
   text-decoration: none;
+  color: inherit;
 }
 
 * {
@@ -29,4 +48,96 @@ a {
 .header-list {
   display: flex;
   justify-content: space-between;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 120px;
+}
+
+.header-item:nth-child(1) button {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.header-item:nth-child(2) {
+  font-size: 15px;
+}
+
+.header-item:nth-child(3) button {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-item button,
+.header a {
+  padding: 42px 0 42px 0;
+}
+
+.header-list button:hover,
+.header-list button:focus {
+  color: var(--color-accent);
+}
+
+.header-list a:hover,
+.header-list a:focus {
+  color: var(--color-accent);
+}
+
+/* Секция герой */
+
+.hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--color-lightgray);
+  padding-bottom: 70px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  color: var(--color-wiht);
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: var(--color-accent);
+  text-transform: capitalize;
+}
+
+.hero-list {
+  display: flex;
+  color: var(--color-wiht);
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.hero-item {
+  padding: 10px 0;
+  font-size: 14px;
+  font-feature-settings: "liga" off;
+}
+
+.hero-item:hover,
+.hero-item:hover {
+  color: var(--color-accent);
 }
