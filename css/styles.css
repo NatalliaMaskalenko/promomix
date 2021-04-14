@@ -23,9 +23,32 @@ body {
   margin-right: auto;
 }
 
+.section-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--color-lightgray);
+}
+
+.section-description {
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1.2;
+}
+
+.accent-color {
+  color: var(--color-accent);
+}
+
 /* Утилиты */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -140,4 +163,260 @@ a {
 .hero-item:hover,
 .hero-item:hover {
   color: var(--color-accent);
+}
+
+/* Услуги */
+.services {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.services .section-description {
+  margin-bottom: 100px;
+}
+
+.services-text {
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.services-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.services-item {
+  flex-basis: calc(100% / 4-60px);
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+/* Наши приемущества */
+.advantages {
+  padding: 150px 0;
+}
+
+.wrap-advantages {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrap-advantages-text,
+.advantages-items {
+  flex-basis: calc(100% / 2);
+}
+
+.wrap-advantages-text {
+  margin-right: 60px;
+}
+
+.advantages-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - 60px) / 4);
+
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.advantages-item:nth-child(4n + 1),
+.advantages-item:nth-child(4n + 2) {
+  margin-bottom: 11px;
+}
+
+.advantages-accent {
+  display: block;
+  font-size: 75px;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.advantages-accent::after {
+  content: "";
+  display: block;
+
+  margin-top: 17px;
+  margin-bottom: 20px;
+
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-lightgray);
+}
+
+/* Наши работы */
+.works {
+  padding: 200px 0;
+}
+
+.works .section-description {
+  margin-bottom: 60px;
+}
+
+.works-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.works-item {
+  flex-basis: calc(100% / 2-60px);
+
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.works-title {
+  margin-top: 20px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.works-text {
+  margin-top: 15px;
+
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-lightgray);
+}
+
+.works-link {
+  margin-top: 80px;
+  line-height: 1;
+}
+
+.works-link:hover,
+.works-link:focus {
+  color: var(--color-accent);
+}
+
+.works-element::before {
+  content: "";
+  display: inline-block;
+
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-mein);
+}
+
+.works-link:hover .works-element::before,
+.works-link:focus .works-element::before {
+  background-color: var(--color-accent);
+}
+
+/* Наши партнёры */
+.partners {
+  padding-top: 177px;
+  padding-bottom: 167px;
+}
+
+.wrap-partners {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrap-partners-text,
+.partners-items {
+  flex-basis: calc(100% / 2);
+}
+
+.partners-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -55px;
+  margin-left: -55px;
+}
+
+.partners-item {
+  flex-basis: calc((100% - 55px) / 6);
+
+  margin-top: 55px;
+  margin-left: 55px;
+}
+
+/* Статьи и новости */
+.news .section-description {
+  margin-bottom: 98px;
+}
+
+.news-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.wrap-news,
+.wrap-news-text {
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+.wrap-news {
+  display: flex;
+  margin-right: 60px;
+}
+
+.wrap-news p {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--color-lightgray);
+}
+
+.wrap-news-text time {
+  font-size: 14px;
+  line-height: 1;
+
+  color: var(--color-lightgray);
+}
+
+.news-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.news-text {
+  margin-bottom: 40px;
+
+  line-height: 1.5;
+  font-feature-settings: "liga" off;
+}
+
+.news button {
+  border: none;
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
