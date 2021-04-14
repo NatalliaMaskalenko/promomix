@@ -5,15 +5,16 @@
   --color-lightgray: #b0b6bf;
   --color-mein: #1f2c37;
   --color-wiht: #ffffff;
+  --bg-color-section: #f2f4f7;
 }
 
 body {
   font-family: var(--mein-font);
   font-size: 16px;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: var(--color-mein);
-  line-height: 1;
   background: #ffffff;
 }
 
@@ -27,7 +28,6 @@ body {
   margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
@@ -42,6 +42,52 @@ body {
 
 .accent-color {
   color: var(--color-accent);
+}
+
+/* Стилизация ссылки  - Все работы */
+.link-open {
+  margin-top: 80px;
+
+  font-weight: 500;
+}
+
+.link-open:hover,
+.link-open:focus {
+  color: var(--color-accent);
+}
+
+.link-open .link-open-element::before {
+  content: "";
+  display: inline-block;
+
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-mein);
+}
+
+.link-open:hover .link-open-element::before,
+.link-open:focus .link-open-element::before {
+  background-color: var(--color-accent);
+}
+
+/* Стилизация  квадратной кнопки - Все работы */
+.button {
+  padding: 22px 44px;
+  border: 1px solid var(--color-accent);
+
+  background-color: transparent;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-wiht);
 }
 
 /* Утилиты */
@@ -60,6 +106,18 @@ a {
 * {
   margin: 0;
   padding: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  margin-bottom: 0;
 }
 
 /* Шапка страницы */
@@ -114,7 +172,6 @@ a {
 }
 
 /* Секция герой */
-
 .hero {
   max-width: 1600px;
   margin-right: auto;
@@ -133,16 +190,11 @@ a {
   margin-right: auto;
 }
 
-.hero-title {
+.hero-slogan {
   color: var(--color-wiht);
   font-weight: 500;
   font-size: 45px;
   line-height: 1.2;
-}
-
-.hero-title span {
-  color: var(--color-accent);
-  text-transform: capitalize;
 }
 
 .hero-list {
@@ -196,6 +248,7 @@ a {
 /* Наши приемущества */
 .advantages {
   padding: 150px 0;
+  background-color: var(--bg-color-section);
 }
 
 .wrap-advantages {
@@ -238,7 +291,6 @@ a {
 .advantages-accent {
   display: block;
   font-size: 75px;
-  line-height: 1;
   color: var(--color-accent);
 }
 
@@ -283,47 +335,23 @@ a {
 
   font-weight: 500;
   font-size: 20px;
-  line-height: 1;
 }
 
 .works-text {
   margin-top: 15px;
 
   font-size: 11px;
-  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-lightgray);
-}
-
-.works-link {
-  margin-top: 80px;
-  line-height: 1;
-}
-
-.works-link:hover,
-.works-link:focus {
-  color: var(--color-accent);
-}
-
-.works-element::before {
-  content: "";
-  display: inline-block;
-
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-mein);
-}
-
-.works-link:hover .works-element::before,
-.works-link:focus .works-element::before {
-  background-color: var(--color-accent);
 }
 
 /* Наши партнёры */
 .partners {
   padding-top: 177px;
   padding-bottom: 167px;
+
+  background-color: var(--bg-color-section);
 }
 
 .wrap-partners {
@@ -355,6 +383,10 @@ a {
 }
 
 /* Статьи и новости */
+.news {
+  padding: 200px 0;
+}
+
 .news .section-description {
   margin-bottom: 98px;
 }
@@ -376,11 +408,11 @@ a {
 .wrap-news {
   display: flex;
   margin-right: 60px;
+  justify-content: space-between;
 }
 
 .wrap-news p {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
@@ -389,7 +421,6 @@ a {
 
 .wrap-news-text time {
   font-size: 14px;
-  line-height: 1;
 
   color: var(--color-lightgray);
 }
@@ -410,13 +441,79 @@ a {
   font-feature-settings: "liga" off;
 }
 
-.news button {
-  border: none;
-  background-color: transparent;
-
+.news-link {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.news-link:hover,
+.news-link:focus {
+  color: var(--color-accent);
+}
+
+.wrap-news-link:hover .news-title,
+.wrap-news-link:hover .news-link {
+  color: var(--color-accent);
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--bg-color-section);
+}
+
+.footer-slogan {
+  margin-bottom: 62px;
+
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.wrap-footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 100px 0;
+}
+
+.inner-footer {
+  flex-basis: calc((100% - 60px) / 4);
+}
+
+.inner-footer:first-child {
+  flex-basis: calc((100% - 60px) / 2);
+}
+
+.footer-item-nav:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.footer-link-nav:hover,
+.footer-link-nav:focus {
+  color: var(--color-accent);
+}
+
+.inner-footer p {
+  line-height: 150%;
+  margin-bottom: 64px;
+}
+
+.inner-footer-socials {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 43px 0;
+  background-color: var(--color-wiht);
+}
+
+.footer-socials-items {
+  display: flex;
+  justify-content: space-between;
+
+  font-feature-settings: "liga" off;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 32px;
 }
