@@ -5,337 +5,455 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О компании</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="../index.html">promomix</a>
-      <ul>
-        <li><button type="button">поиск</button></li>
-        <li><a href="tel:84964290900">8 496 429 09 00</a></li>
-        <li><button type="button">оставить заявку</button></li>
-      </ul>
+    <!-- Шапка страницы -->
+    <header class="header">
+      <div class="container">
+        <a href="../index.html">promomix</a>
+        <ul class="header-list list">
+          <li class="header-item"><button type="button">поиск</button></li>
+          <li class="header-item">
+            <a href="tel:84964290900">8 496 429 09 00</a>
+          </li>
+          <li class="header-item">
+            <button type="button">оставить заявку</button>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <!-- Наши приемущества -->
-      <section>
-        <p>О компании</p>
-        <h1>
-          Promomix – одна из крупнейших компаний на рекламном рынке Подмосковья.
-        </h1>
-        <img src="./images/about/foto1.jpg" width="1200" alt="Наша команда" />
-        <ul>
-          <li><p>18+ лет опыта на рекламном рынке</p></li>
-          <li><p>250+ реализованных проектов</p></li>
-          <li><p>37 квалифицированных сотрудников</p></li>
-          <li><p>14+ профессионального оборудования</p></li>
-        </ul>
+      <!-- О компании -->
+      <section class="about">
+        <div class="container">
+          <div class="wrap-about">
+            <h1 class="main-title">О компании</h1>
+            <p class="about-text">
+              Promomix – одна из крупнейших компаний на рекламном рынке
+              Подмосковья.
+            </p>
+          </div>
+          <img
+            src="../images/about/foto1.jpg"
+            width="1200"
+            alt="Наша команда"
+          />
+          <ul class="about-items list">
+            <li class="about-item">
+              <p>
+                <span class="about-accent">18+</span> лет опыта на рекламном
+                рынке
+              </p>
+            </li>
+            <li class="about-item">
+              <p>
+                <span class="about-accent">250+ </span> реализованных проектов
+              </p>
+            </li>
+            <li class="about-item">
+              <p>
+                <span class="about-accent">37</span> квалифицированных
+                сотрудников
+              </p>
+            </li>
+            <li class="about-item">
+              <p>
+                <span class="about-accent">14+</span> профессионального
+                оборудования
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- О нас -->
-      <section>
-        <h2>доверьте рекламу профессионалам</h2>
-        <p>
-          Мы создаем не просто рекламу, а формируем уникальный имидж наших
-          клиентов. Предоставляем широкий спектр услуг – от создания фирменного
-          стиля до наружной рекламы. Благодаря современному оборудованию и
-          точной работе наших сотрудников, ваш бизнес станет узнаваемым и
-          успешным.
-        </p>
+      <section class="about-us">
+        <div class="container">
+          <h2 class="section-title">доверьте рекламу профессионалам</h2>
+          <p class="about-us-text">
+            Мы создаем не просто рекламу, а формируем уникальный имидж наших
+            клиентов. Предоставляем широкий спектр услуг – от создания
+            фирменного стиля до наружной рекламы. Благодаря современному
+            оборудованию и точной работе наших сотрудников, ваш бизнес станет
+            узнаваемым и успешным.
+          </p>
+        </div>
       </section>
       <!-- Услуги -->
-      <section>
-        <a href="./features.html"><h2>услуги</h2></a>
-        <p>Ключевые направления</p>
-        <ul>
-          <li>
-            <a href="/">
-              <img
-                src="./images/icon/icon1.svg"
-                width="70"
-                height="70"
-                alt="Параллелепипед"
-              />
-              <h3>Наружная реклама</h3></a
-            >
-          </li>
-          <li>
-            <a href="/"
-              ><img
-                src="../images/icon/icon2.svg"
-                width="70"
-                height="70"
-                alt="Постер"
-              />
-              <h3>Широкоформатная печать</h3></a
-            >
-          </li>
-          <li>
-            <a href="./polygraphy.html"
-              ><img
-                src="../images/icon/icon3.svg"
-                width="70"
-                height="70"
-                alt="Буклет"
-              />
-              <h3>Рекламная полиграфия</h3></a
-            >
-          </li>
-          <li>
-            <a href="/"
-              ><img
-                src="../images/icon/icon4.svg"
-                width="70"
-                height="70"
-                alt="Кружка"
-              />
-              <h3>Сувенирная продукция</h3></a
-            >
-          </li>
-          <li>
-            <a href="/"
-              ><img
-                src="../images/icon/icon5.svg"
-                width="70"
-                height="70"
-                alt="Монитор"
-              />
-              <h3>Внутренняя реклама</h3></a
-            >
-          </li>
-          <li>
-            <a href="/"
-              ><img
-                src="../images/icon/icon6.svg"
-                width="70"
-                height="70"
-                alt="Футболка"
-              />
-              <h3>Брендирование одежды</h3></a
-            >
-          </li>
-          <li>
-            <a href="/"
-              ><img
-                src="../images/icon/icon7.svg"
-                width="70"
-                height="70"
-                alt="Автобус"
-              />
-              <h3>Брендирование одежды</h3></a
-            >
-          </li>
-          <li>
-            <a href="./features.html"
-              ><img src="../images/icon/icon8.svg" alt="Стрелка" />
-              <h3>Все услуги</h3></a
-            >
-          </li>
-        </ul>
+      <section class="services">
+        <div class="container">
+          <h2 class="section-title">услуги</h2>
+          <p class="section-description">
+            Ключевые <span class="accent-color">направления</span>
+          </p>
+          <ul class="services-items list">
+            <li class="services-item">
+              <a href="/">
+                <img
+                  src="../images/icon/icon1.svg"
+                  width="70"
+                  height="70"
+                  alt="Параллелепипед"
+                />
+                <h3 class="services-text">Наружная реклама</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="/"
+                ><img
+                  src="../images/icon/icon2.svg"
+                  width="70"
+                  height="70"
+                  alt="Постер"
+                />
+                <h3 class="services-text">Широкоформатная печать</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="./html/polygraphy.html"
+                ><img
+                  src="../images/icon/icon3.svg"
+                  width="70"
+                  height="70"
+                  alt="Буклет"
+                />
+                <h3 class="services-text">Рекламная полиграфия</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="/"
+                ><img
+                  src="../images/icon/icon4.svg"
+                  width="70"
+                  height="70"
+                  alt="Кружка"
+                />
+                <h3 class="services-text">Сувенирная продукция</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="/"
+                ><img
+                  src="../images/icon/icon5.svg"
+                  width="70"
+                  height="70"
+                  alt="Монитор"
+                />
+                <h3 class="services-text">Внутренняя реклама</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="/"
+                ><img
+                  src="../images/icon/icon6.svg"
+                  width="70"
+                  height="70"
+                  alt="Футболка"
+                />
+                <h3 class="services-text">Брендирование одежды</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="/"
+                ><img
+                  src="../images/icon/icon7.svg"
+                  width="70"
+                  height="70"
+                  alt="Автобус"
+                />
+                <h3 class="services-text">Брендирование одежды</h3></a
+              >
+            </li>
+            <li class="services-item">
+              <a href="./html/features.html"
+                ><img src="../images/icon/icon8.svg" alt="Стрелка" />
+                <h3 class="services-text">Все услуги</h3></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- История -->
-      <section>
-        <h2>История</h2>
-        <p>18+ лет опыта на рекламном рынке</p>
-        <ul>
-          <li>
-            <h3>2011</h3>
-            <p>
-              Запустили цеха по производству рекламных материалов для
-              обеспечения потребностей наших клиентов в полном цикле рекламных
-              услуг. Росли и развивались, постоянно пополняя ассортимент
-              рекламной продукции.
-            </p>
-          </li>
-          <li>
-            <h3>2015</h3>
-            <p>
-              Провели модернизацию наших цехов. Закупили самые современные
-              станки и принтеры. Благодаря высокому качеству печати привлекли
-              множество новых клиентов и стали востребованной компанией на
-              рекламном рынке.
-            </p>
-          </li>
-          <li>
-            <h3>2017</h3>
-            <p>
-              Приобрели дополнительное оборудование, что позволило значительно
-              расширить ассортимент изготавливаемой продукции. Мощный рост
-              направления нашей деятельности привел к разделению наружной
-              рекламы и производства.
-            </p>
-          </li>
-          <li>
-            <h3>2019</h3>
-            <p>
-              На сегодняшний день компания Promomix входит в число наиболее
-              энергично развивающихся рекламно-производственных компаний
-              Подмосковья. В наших цехах работают станки для производства
-              практически всех видов рекламной продукции.
-            </p>
-          </li>
-        </ul>
-        <img
-          src="./images/about/foto2.jpg"
-          width="1200"
-          alt="Человек работает за комьпютером"
-        />
+      <section class="history">
+        <div class="container">
+          <div class="wrap-history">
+            <div class="inner-history-text">
+              <h2 class="section-title">История</h2>
+              <p class="history-heading">
+                <span class="accent-color">18+</span> лет опыта на рекламном
+                рынке
+              </p>
+            </div>
+            <ul class="history-items list">
+              <li class="history-item">
+                <h3 class="history-subtitle">2011</h3>
+                <p>
+                  Запустили цеха по производству рекламных материалов для
+                  обеспечения потребностей наших клиентов в полном цикле
+                  рекламных услуг. Росли и развивались, постоянно пополняя
+                  ассортимент рекламной продукции.
+                </p>
+              </li>
+              <li class="history-item">
+                <h3 class="history-subtitle">2015</h3>
+                <p>
+                  Провели модернизацию наших цехов. Закупили самые современные
+                  станки и принтеры. Благодаря высокому качеству печати
+                  привлекли множество новых клиентов и стали востребованной
+                  компанией на рекламном рынке.
+                </p>
+              </li>
+              <li class="history-item">
+                <h3 class="history-subtitle">2017</h3>
+                <p>
+                  Приобрели дополнительное оборудование, что позволило
+                  значительно расширить ассортимент изготавливаемой продукции.
+                  Мощный рост направления нашей деятельности привел к разделению
+                  наружной рекламы и производства.
+                </p>
+              </li>
+              <li class="history-item">
+                <h3 class="history-subtitle">2019</h3>
+                <p>
+                  На сегодняшний день компания Promomix входит в число наиболее
+                  энергично развивающихся рекламно-производственных компаний
+                  Подмосковья. В наших цехах работают станки для производства
+                  практически всех видов рекламной продукции.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="../images/about/foto2.jpg"
+            width="1200"
+            alt="Человек работает за комьпютером"
+          />
+        </div>
       </section>
       <!-- Оборудование -->
-      <section>
-        <h2>Оборудование</h2>
-        <table>
-          <tr>
-            <td>01</td>
-            <td>Фрезерный станок</td>
-            <td>Shtalmark M3-2040</td>
-            <td><button>+</button></td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Cублимационный плоттер</td>
-            <td>Roland</td>
-            <td><button>+</button></td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Принтер</td>
-            <td>Konica Minolta</td>
-            <td><button>+</button></td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>Плоттер-каттер</td>
-            <td>Roland</td>
-            <td><button>+</button></td>
-          </tr>
-          <tr>
-            <td>05</td>
-            <td>Сольвентный плоттер</td>
-            <td>Mimaki</td>
-            <td><button>+</button></td>
-          </tr>
-        </table>
+      <section class="equipment">
+        <div class="container">
+          <h2 class="section-title">Оборудование</h2>
+          <ul class="equipment-items list">
+            <li class="equipment-item">
+              <h3 class="equipment-subtitle">
+                <span class="equipment-number">01</span> Фрезерный станок
+              </h3>
+              <p>Shtalmark M3-2040</p>
+              <button class="equipment-button">+</button>
+            </li>
+            <li class="equipment-item">
+              <h3 class="equipment-subtitle">
+                <span class="equipment-number">02</span>Cублимационный плоттер
+              </h3>
+              <p>Roland</p>
+              <button class="equipment-button">+</button>
+            </li>
+            <li class="equipment-item">
+              <h3 class="equipment-subtitle">
+                <span class="equipment-number">03</span>Принтер
+              </h3>
+              <p>Konica Minolta</p>
+              <button class="equipment-button">+</button>
+            </li>
+            <li class="equipment-item">
+              <h3 class="equipment-subtitle">
+                <span class="equipment-number">04</span>Плоттер-каттер
+              </h3>
+              <p>Roland</p>
+              <button class="equipment-button">+</button>
+            </li>
+            <li class="equipment-item">
+              <h3 class="equipment-subtitle">
+                <span class="equipment-number">05</span>Сольвентный плоттер
+              </h3>
+              <p>Mimaki</p>
+              <button class="equipment-button">+</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наши работы -->
-      <section>
-        <h2>наши работы</h2>
-        <p>Воплощаем идеи</p>
-        <ul>
-          <li>
-            <img
-              src="./images/ourwork/starbucksсoffee.jpg"
-              width="360"
-              height="270"
-              alt="Логотип Кафе Starbucks Coffee"
-            />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>вывеска объемная</p>
-          </li>
-          <li>
-            <img
-              src="./images/ourwork/emosi.jpg"
-              width="360"
-              height="360"
-              alt="Логотип сети ресторанов Emosi"
-            />
-            <h3>Сеть ресторанов Emosi</h3>
-            <p>вывеска объемная</p>
-          </li>
-          <li>
-            <img
-              src="./images/ourwork/flora.jpg"
-              width="360"
-              height="270"
-              alt="Логотип релакс студии Flora"
-            />
-            <h3>Релакс студия Flora</h3>
-            <p>фирменный стиль</p>
-          </li>
-          <li>
-            <img
-              src="./images/ourwork/levis.jpg"
-              width="360"
-              height="360"
-              alt="Логотип магазина Levi's"
-            />
-            <h3>Магазин Levi's</h3>
-            <p>Входная группа и вывеска</p>
-          </li>
-          <li>
-            <img
-              src="./images/ourwork/sierra.jpg"
-              width="360"
-              height="270"
-              alt="Логотип бизнес центра Sierra"
-            />
-            <h3>Бизнес центр Sierra</h3>
-            <p>фирменый стиль</p>
-          </li>
-          <li>
-            <img
-              src="./images/ourwork/bioflora.jpg"
-              width="360"
-              height="360"
-              alt="Логотип Bio бутика Flora"
-            />
-            <h3>Bio бутик Flora</h3>
-            <p>наружная реклама</p>
-          </li>
-        </ul>
-        <a href="/">Все работы</a>
+      <section class="ideas">
+        <div class="container">
+          <h2 class="section-title">наши работы</h2>
+          <p class="section-description">
+            Воплощаем <span class="accent-color">идеи</span>
+          </p>
+          <ul class="ideas-items list">
+            <li class="ideas-item">
+              <img
+                src="../images/ourwork/starbucksсoffee.jpg"
+                width="360"
+                height="270"
+                alt="Логотип Кафе Starbucks Coffee"
+              />
+              <h3>Кафе Starbucks Coffee</h3>
+              <p>вывеска объемная</p>
+            </li>
+            <li class="ideas-item">
+              <img
+                src="../images/ourwork/emosi.jpg"
+                width="360"
+                height="360"
+                alt="Логотип сети ресторанов Emosi"
+              />
+              <h3>Сеть ресторанов Emosi</h3>
+              <p>вывеска объемная</p>
+            </li>
+            <li class="ideas-item">
+              <img
+                src="../images/ourwork/flora.jpg"
+                width="360"
+                height="270"
+                alt="Логотип релакс студии Flora"
+              />
+              <h3>Релакс студия Flora</h3>
+              <p>фирменный стиль</p>
+            </li>
+            <!-- <li class="ideas-item">
+              <img
+                src="../images/ourwork/levis.jpg"
+                width="360"
+                height="360"
+                alt="Логотип магазина Levi's"
+              />
+              <h3>Магазин Levi's</h3>
+              <p>Входная группа и вывеска</p>
+            </li>
+            <li class="ideas-item">
+              <img
+                src="../images/ourwork/sierra.jpg"
+                width="360"
+                height="270"
+                alt="Логотип бизнес центра Sierra"
+              />
+              <h3>Бизнес центр Sierra</h3>
+              <p>фирменый стиль</p>
+            </li>
+            <li class="ideas-item">
+              <img
+                src="../images/ourwork/bioflora.jpg"
+                width="360"
+                height="360"
+                alt="Логотип Bio бутика Flora"
+              />
+              <h3>Bio бутик Flora</h3>
+              <p>наружная реклама</p>
+            </li> -->
+          </ul>
+          <a class="link-open" href="/">
+            <span class="link-open-element">Все статьи</span>
+          </a>
+        </div>
       </section>
       <!-- Оставить заявку -->
-      <section>
-        <h2>Заявка</h2>
-        <p>
-          Оставьте заявку, наш менеджер обработает её и свяжется с вами в
-          ближайшее время
-        </p>
-        <form action="/" method="POST">
-          <input type="text" placeholder="Имя" />
-          <input type="number" placeholder="Телефон" />
-          <input type="text" placeholder="Комментарий к заявке" />
-          <input type="file" />
-        </form>
-        <button type="submit">Отправить</button>
-        <p>
-          Нажимая «Отправить» вы даёте согласие на обработку персональных данных
-        </p>
+      <section class="request">
+        <div class="container">
+          <div class="wrap-request">
+            <div class="inner-request-text">
+              <h2 class="section-description">Заявка</h2>
+              <p>
+                Оставьте заявку, наш менеджер обработает её и свяжется с вами в
+                ближайшее время
+              </p>
+            </div>
+            <div class="inner-request-form">
+              <form class="request-form" action="/" method="POST">
+                <input type="text" placeholder="Имя" />
+                <input type="number" placeholder="Телефон" />
+                <input type="text" placeholder="Комментарий к заявке" />
+                <input type="file" />
+              </form>
+              <button type="submit">Отправить</button>
+              <p>
+                Нажимая «Отправить» вы даёте согласие на обработку персональных
+                данных
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>Навигация</h2>
-        <a href="../index.html">Promomix – рекламное агентство полного цикла</a>
-        <button type="button">оставить заявку</button>
-        <nav>
-          <ul>
-            <li><a href="./about.html">О компании</a></li>
-            <li><a href="./features.html">Услуги</a></li>
-            <li><a href="./works.html">Наши работы</a></li>
-            <li><a href="./services.html">Сервис</a></li>
-            <li><a href="">Комплексные решения</a></li>
-            <li><a href="">Статьи и новости</a></li>
-            <li><a href="">Контакты</a></li>
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container">
+        <div class="wrap-footer">
+          <div class="inner-footer">
+            <h2 class="visually-hidden">Навигация</h2>
+            <a class="footer-slogan" href="./index.html">
+              <span class="accent-color">Promomix –</span><br />
+              рекламное агентство <br />
+              полного цикла</a
+            >
+            <button class="button" type="button">оставить заявку</button>
+          </div>
+          <div class="inner-footer">
+            <nav>
+              <ul class="list">
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="./html/about.html"
+                    >О компании</a
+                  >
+                </li>
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="/html/features.html"
+                    >Услуги</a
+                  >
+                </li>
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="./html/works.html"
+                    >Наши работы</a
+                  >
+                </li>
+                <li class="footer-item-nav">
+                  <a lass="footer-link-nav" href="./html/services.html"
+                    >Сервис</a
+                  >
+                </li>
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="">Комплексные решения</a>
+                </li>
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="">Статьи и новости</a>
+                </li>
+                <li class="footer-item-nav">
+                  <a class="footer-link-nav" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="inner-footer">
+            <p>
+              Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
+              рассылку.
+            </p>
+            <form>
+              <input type="email" placeholder="ваш e-mail" />
+            </form>
+            <button type="submit">&#8594;</button>
+          </div>
+        </div>
+        <div class="inner-footer-socials">
+          <p>&#169;2011 - 2020 Promomix</p>
+          <ul class="footer-socials-items list">
+            <li class="footer-socials-item">
+              <a href="//www.Facebook.com/username/">Facebook</a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="//www.Vkontakte.com/username/"></a>Vkontakte
+            </li>
+            <li class="footer-socials-item">
+              <a href="//www.instagram.com/username/"></a>Instagram
+            </li>
           </ul>
-        </nav>
-      </section>
-      <section>
-        <h2>Мы в социальных сетях</h2>
-        <p>
-          Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
-          рассылку.
-        </p>
-        <form>
-          <input type="email" placeholder="ваш e-mail" />
-        </form>
-        <button type="submit">&#8594;</button>
-        <p>&#169;2011 - 2020 Promomix</p>
-        <ul>
-          <li><a href="//www.Facebook.com/username/">Facebook</a></li>
-          <li><a href="//www.Vkontakte.com/username/"></a>Vkontakte</li>
-          <li><a href="//www.instagram.com/username/"></a>Instagram</li>
-        </ul>
-      </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
